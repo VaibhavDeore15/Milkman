@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .error-message {
+            color: red;
+            font-size: 14px;
+        }
+        .create-account-btn {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: #fff;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+        .create-account-btn:hover {
+            background-color: #ff7800;
+            border-color: #0056b3;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .input-group-text {
+            background-color: #fff;
+            
+        }
+        body{
+            background-color: #eee;
+        }
+        .input-group-text i {
+            color: #000000;
+            
+        }
+        .form-control {
+            border-radius: 10px;
+            border: 1px solid #ced4da; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <!-- create account start  -->
+                <form class="mt-5" style="max-width: 500px ;" action="register.php" method="post">
+                    <h1 class="mb-3">Create Account</h1>
+                    <div class="mb-3 input-group">
+                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        <input type="text" id="username" class="form-control" placeholder="Username" name="username" required>
+                    </div>
+                    <div class="mb-3 input-group">
+                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                        <input type="email" id="email" class="form-control" placeholder="Email" name="email" required>
+                    </div>
+                    <div class="mb-3 input-group">
+                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                        <input type="password" id="password" class="form-control" placeholder="Password" name="password" required>
+                    </div>
+                    <div class="mb-3 input-group">
+                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                        <input type="password" id="confirm-password" class="form-control" placeholder="Confirm Password" name="confirm-password" required>
+                    </div>
+                    <button type="submit" name="submit" class="btn create-account-btn">Create Account</button>
+                    <div id="error-message" class="error-message mt-3"></div>
+                </form>
+                <!-- create account end -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.querySelector('form');
+            const error = document.querySelector('.error-message');
+
+        
+                if (password.length < 6) {
+                    error.textContent = 'Password should be at least 6 characters long.';
+                    return;
+                }
+
+                if (password !== confirmPassword) {
+                    error.textContent = 'Passwords do not match.';
+                    return;
+                }
+
+                // Here, you can perform AJAX request to send data to server and create account
+                // Upon successful creation, you can redirect to home page
+                
+                // Change 'index.html' to your home page URL
+                
+               // window.location.href = 'index.html';
+
+            });
+        
+    </script>
+
+</body>
+</html>

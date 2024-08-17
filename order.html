@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Order</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Link to your Bootstrap CSS (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- Your custom styles -->
+    <style>
+      
+        .error-message {
+            color: red;
+            font-size: 16px; 
+        }
+        .create-account-btn {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: #fff;
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+            text-align: center;
+            font-size: 15px; 
+        }
+        .create-account-btn:hover {
+            background-color: #ff7800;
+            border-color: #0056b3;
+            color: #fff;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+        .input-group-text {
+            background-color: #fff;
+        }
+        h5{
+            font-size: 20px;
+            padding: 10px;
+        }
+        body{
+            background-color: #eee;
+        }
+        .input-group-text i {
+            color: #000000;
+            
+        }
+        .form-control {
+            border-radius: 10px;
+            border: 1px solid #ced4da; /* Add border styling */
+            font-size: 12px; /* Increased font size */
+            transition: border-color 0.3s ease; /* Smooth transition */
+        }
+    </style>
+</head>
+<body>
+    <!-- Your existing content -->
+
+    <!-- Modal -->
+    <div class="modal" id="orderModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header" style="text-align:center" >
+                    <h5 class="modal-title ">Place Your Order</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body" >
+                    <!-- Your form goes here -->
+                    <form id="orderForm" action="order.php" method="post" >
+                        <div class="mb-3">
+                            <label for="customerName" class="form-label">Your Name:</label>
+                            <input type="text" class="form-control" name="username" id="customerName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phoneNumber" class="form-label">Phone Number:</label>
+                            <input type="tel" class="form-control" name="phone" id="phoneNumber" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Full Address:</label>
+                            <textarea class="form-control" id="address" name="address" required></textarea>
+                        </div>
+                        <div class="mb-3 text-center" style="color:rgb(218, 17, 17) ";>
+                            <marquee><p>30ru of Delivery charges are taken</p></marquee>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="termsConditions" required>
+                            <label class="form-check-label" for="termsConditions">
+                                I agree to the terms and conditions
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn create-account-btn" name="submit">Submit</button>
+                    </form>
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Your existing content -->
+
+    <!-- Script to display the modal when the page loads -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var myModal = new bootstrap.Modal(document.getElementById('orderModal'));
+            myModal.show();
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

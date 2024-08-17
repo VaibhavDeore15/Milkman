@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>milkman</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> -->
+    </head>
+<body>
+    <!--HEader start-->
+    <header class="header">
+        <a href="#" class="logo"><i class="fa-solid fa-cow"></i>milkman</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#products">Product</a>
+            <a href="#review">review</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="img/cowm.png" alt="">
+                <div class="content">
+                    <h3>Cow Milk</h3>
+                    <span class="price">₹50/- liter</span>
+                    <div class="quantity-controls">
+                        <button class="decrement-btn">-</button>
+                        <span class="quantity">0</span> 
+                        <button class="increment-btn">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="img/buffmain.png" alt="">
+                <div class="content">
+                    <h3>Buffalo Milk</h3>
+                    <span class="price">₹70/- liter</span>
+                    <div class="quantity-controls">
+                        <button class="decrement-btn">-</button>
+                        <span class="quantity">0</span> 
+                        <button class="increment-btn">+</button>
+                    </div>                </div>
+            </div>
+            <div class="total">total :₹00</div>
+            <a href="#" class="btn" id="orderButton">Order</a>
+        </div>
+        <form action="" class="login-form">
+            <h3>login form</h3>
+            <input type="Email" placeholder="Enter your email" class="box">
+            <input type="password" placeholder="Password" class="box">
+            <p>forget your password <a href="#">click here</a></p>
+            <p>don't have an account <a href="#" id="create-now">create now</a></p>
+            <input type="button" value="login now" class="btn">
+        </form>
+    </header> 
+
+    <!-- end header section -->
+       
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Milkman Welcomes You<br><span>Delivering Freshness Daily Milk<br></span>milkman delivers yours daily needs right at your doorstep</h3>
+            <a href="#" class="btn1">Shop now</a>
+        </div>
+    </section>
+    <img src="img/benefits.jpg" alt="" id="benefits">
+    <!--End home section-->
+    <!--Features start-->
+    <section class="features" id="features">
+       <h1 class="heading">our <span>features</span></h1> 
+       <div class="box-container">
+        <div class="box">
+            <img src="img/box1.webp" alt="">
+            <h3>Topup & Start</h3>
+            <p>Just register with your basic details and top-up your Milkbasket wallet with any pre-defined amount.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+        <div class="box">
+            <img src="img/box2.webp" alt="">
+            <h3>Set Order</h3>
+            <p>Create a repeat order or order anytime till midnight from a wide selection of your daily needs.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+        <div class="box">
+            <img src="img/box3.webp" alt="">
+            <h3>We Deliver</h3>
+            <p>Our excellent delivery team will place your order at your doorstep. Just open your door and pick it up anytime after 7:00 am.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+       </div>
+    </section>
+<!--Features end-->
+<!--product start-->
+<section class="products" id="products">
+    <h1 class="heading">our <span>product</span></h1>
+    <div class="product-slider">
+        <div class="wrapper">
+            <div class="box">
+                <img src="img/cowm.png" alt="">
+                <h3>fresh cow milk</h3>
+                <div class="price">₹50</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn2">add to cart</a>
+            </div>
+            <div class="box">
+                <img src="img/buffmain.png" alt="">
+                <h3>fresh Buffalo milk</h3>
+                <div class="price">₹70</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn2">add to cart</a>
+            </div>
+        </div>
+    </div> 
+</section>
+<!--product end-->
+<!-- review start -->
+    <section class="review" id="review">
+        <h1 class="heading">customer's<span>review</span></h1>
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="img/peo0.jpeg" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti odio porro, unde quam illo molestiae alias asperiores cum sunt velit?</p>
+                    <h3>Vaibhav Deore</h3>
+                    <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="img/peoharsh.png" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti odio porro, unde quam illo molestiae alias asperiores cum sunt velit?</p>
+                    <h3>Harshal Khairnar</h3>
+                    <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="img/peo2.jpg" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti odio porro, unde quam illo molestiae alias asperiores cum sunt velit?</p>
+                    <h3>adi tukle</h3>
+                    <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i> 
+                    <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="img/peor.png" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti odio porro, unde quam illo molestiae alias asperiores cum sunt velit?</p>
+                    <h3>Roshan</h3>
+                    <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="img/peo4.jpg" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti odio porro, unde quam illo molestiae alias asperiores cum sunt velit?</p>
+                    <h3>barlin shem</h3>
+                    <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="img/peo5.jpg" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti odio porro, unde quam illo molestiae alias asperiores cum sunt velit?</p>
+                    <h3>tokiyo risa</h3>
+                    <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- review end -->
+    <!-- footer start -->
+    <section class="footer" id="contact">
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fa-solid fa-cow"></i>Milkman</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, excepturi.</p>
+                <div class="share">
+                    <a href="" class="fab fa-facebook-f"></a>
+                    <a href="" class="fab fa-twitter"></a>
+                    <a href="" class="fab fa-instagram"></a>
+                    <a href="" class="fab fa-linkedin"></a>
+                    <a href="" class="fab fa-whatsapp"></a>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <h3>contact info</h3>
+                    <a href="" class="links"><i class="fas fa-phone"></i>+123-456-789</a>
+                    <a href="" class="links"><i class="fas fa-phone"></i>+111-896-89</a>
+                    <a href="" class="links"><i class="fas fa-envelope"></i>viabhavdeore@gmail.com</a>
+                    <a href="" class="links"><i class="fas fa-map-marker-alt"></i>nashik,india-422004</a>
+                    </div>
+                </div>
+                <div class="box-container">
+                    <div class="box">
+                        <h3>quick links</h3>
+                        <a href="" class="links"><i class="fas fa-arrow-right"></i>home</a>
+                        <a href="" class="links"><i class="fas fa-arrow-right"></i>features</a>
+                        <a href="" class="links"><i class="fas fa-arrow-right"></i>product</a>
+                        <a href="" class="links"><i class="fas fa-arrow-right"></i>review</a>
+                        <a href="" class="links"><i class="fas fa-arrow-right"></i>contact</a>
+                        </div>
+                    </div>
+                    <div class="box-container">
+                        <div class="box">
+                            <h3>newsletter</h3>
+                            <p>you can give your feedback</p>
+                            <input type="email" placeholder="your feedback" class="email">
+                            <input type="submit" value="Submit" class="btn">
+                            </div>
+                        </div>
+        </div>
+        <div class="credit">created by <span>Vaibhav Deore</span> | all rights reserved</div>
+    </section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script> 
+</body>
+</html>
